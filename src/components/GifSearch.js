@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './app.css';
 
 function GifSearch({handleSearch}) {
     const[searchInput, setSearchInput] = useState("")

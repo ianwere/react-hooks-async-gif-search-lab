@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './app.css';
 function GifList({data}) {
     // console.log(data)
   return (
@@ -7,7 +7,7 @@ function GifList({data}) {
         <ul>
             {data.map((gif)=>(
                 <li key={gif.url}>
-                    <img src={gif.url} alt="gif" />
+                    <img src={gif.images.original.url} alt="gif" />
                 </li>
             ))}
         </ul>
@@ -15,4 +15,4 @@ function GifList({data}) {
   )
 }
 
-export default GifList
+export default GifList;
